@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font/font.css" />
+    <title>Portfolio</title>
+
+    <!-- preload image  -->
+    <link rel="stylesheet" as="image" href="images/loading.svg" />
+    <link rel="stylesheet" as="image" href="images/loading-circle.svg" />
+  </head>
+
+  <body class="active" id="top">
+    <!--Preloading -->
+    <div class="loading" data-loading></div>
+
+    <!-- header  -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"> </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <img src="images/menu.svg" alt="" width="17" height="17" />
+        </button>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo"> </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="closemenu"
+              data-nav-toggler
+            >
+              <span class="span one"></span>
+              <span class="span two"></span>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#Compétences" class="navbar-link" data-nav-link
+                >Compétences</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#portfolio" class="navbar-link" data-nav-link
+                >Portfolio</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="#contact us" class="navbar-link" data-nav-link
+                >Contact us</a
+              >
+            </li>
+          </ul>
+
+          <p class="navbar-text">
+            Question urgente ? Envoyez-moi un e-mail à
+            <a href="mailto:yoann.lordinot@gmail.com" class="contact-link"
+              >yoann.lordinot@gmail.com</a
+            >
+          </p>
+          <p class="navbar-text">
+            En savoir plus ? Allez voir à
+            <a
+              href="https://github.com/yoann90"
+              target="_blank"
+              class="contact-link"
+              >Github.</a
+            >
+            <a href="#" class="contact-link">LinkedIn.</a>
+          </p>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- hero -->
+        <section class="section hero" id="home" aria-label="home">
+          <div class="container">
+            <img
+              src="images/2-removebg.png"
+              alt=""
+              width="1522"
+              height="1522"
+              class="hero-banner"
+            />
+
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Yoann Lordinot</h1>
+              <div class="wrapper h2">
+                <strong class="strong" data-letter-effect>Développeur</strong>
+                <strong class="strong" data-letter-effect>Apprenti</strong>
+              </div>
+            </div>
+          </div>
+          <img
+            src="images/hero-shape.svg"
+            width="211"
+            height="189"
+            alt=""
+            class="shape"
+          />
+        </section>
+
+        <!-- gallery -->
+
+        <!-- about -->
+        <section class="section about" id="about" aria-label="about me">
+          <div class="container">
+            <div class="about-content">
+              <h2 class="h2 section-title" data-reveal="right">
+                Hi. I’m <br />
+                Yoann Lordinot
+              </h2>
+              <div class="wrapper has-before" data-reveal="right">
+                <p class="section-text">
+                  Je suis passionné par le
+
+                  <em class="em">Développement web. </em>
+                  J'aime travailler en équipe et partager
+                  <em class="em">mes connaissances.</em>
+                  Je suis prêt à vous donner le meilleur de moi-même.
+                </p>
+              </div>
+            </div>
+
+            <figure class="about-banner" data-reveal="left">
+              <div class="img-holder has-before" style="--width: ; --heigth: ">
+                <img
+                  src="images/moi.jpg"
+                  alt=""
+                  width="512"
+                  height="684"
+                  class="img-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <img
+                src="images/about-shape-2.svg"
+                alt=""
+                width="659"
+                height="653"
+                class="shape shape-2"
+                loading="lazy"
+              />
+            </figure>
+            <img
+              src="images/about-shape-3.svg"
+              alt=""
+              width="239"
+              height="232"
+              loading="lazy"
+              class="shape shape-3"
+            />
+          </div>
+        </section>
+
+        <!-- category -->
+        <section
+          class="section category"
+          id="Compétences"
+          aria-label="photography category"
+        >
+          <div class="container">
+            <ul class="category-list">
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">HTML,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/html.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">CSS,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/css.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">Tailwind,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/tailwind.avif"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">Javascript,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/JavaScript-logo.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">React,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/react.png"
+                      alt=""
+                      width="800"
+                      height="890"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">NodeJs,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/nodejs.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">Express,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/express.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">MongoDB,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/mongoDb.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">TypeScript,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/TypeScript.webp"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">GreenSock,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/GreenSock.jpeg"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+                  <h3 class="h4 card-title">Github,</h3>
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: ; --height: "
+                  >
+                    <img
+                      src="images/GitHub.png"
+                      alt=""
+                      width="600"
+                      height="690"
+                      class="img-cover"
+                      loading="lazy"
+                    />
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- service -->
+
+        <!-- portfolio -->
+
+        <section
+          class="section portfolio"
+          id="portfolio"
+          aria-labelledby="portfolio-label"
+        >
+          <div class="container">
+            <div class="portfolio-list">
+              <div class="wrapper">
+                <h2 class="h2 section-title" id="portfolio-label" data-reveal>
+                  Mes travaux récents.
+                </h2>
+
+                <div class="portfolio-card" data-reveal>
+                  <figure
+                    class="card-banner img-holder has-before"
+                    style="--width: 700; --heigth: 605"
+                  >
+                    <img
+                      src="images/page-presentation.png"
+                      alt=""
+                      width="700"
+                      height="605"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a
+                        href="https://yoann90.github.io/e-commerce-apple/"
+                        target="_blank"
+                        class="card-title"
+                        >Apple-shop</a
+                      >
+                    </h3>
+                    <p class="card-tag">Produits</p>
+                  </div>
+                  <a
+                    href="https://yoann90.github.io/e-commerce-apple/"
+                    target="_blank"
+                    class="btn-icon"
+                    aria-label="see more"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="20"
+                      viewBox="0 0 43 20"
+                      fill="none"
+                    >
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path
+                        d="M33 1L41.9 10.2727L33 19"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="portfolio-card" data-reveal>
+                  <figure
+                    class="card-banner img-holder has-before"
+                    style="--width: 700; --heigth: 1091"
+                  >
+                    <img
+                      src="images/project meuble.png"
+                      alt=""
+                      width="700"
+                      height="1091"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a
+                        href="https://github.com/yoann90/projet-collectif-plateforme-de-vente-de-meubles-NOYALES_Meubles"
+                        target="_blank"
+                        class="card-title"
+                        >Meuble E-commerce</a
+                      >
+                    </h3>
+                    <p class="card-tag">produits</p>
+                  </div>
+                  <a
+                    href="https://github.com/yoann90/projet-collectif-plateforme-de-vente-de-meubles-NOYALES_Meubles"
+                    target="_blank"
+                    class="btn-icon"
+                    aria-label="see more"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="20"
+                      viewBox="0 0 43 20"
+                      fill="none"
+                    >
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path
+                        d="M33 1L41.9 10.2727L33 19"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="wrapper">
+                <div class="portfolio-card" data-reveal>
+                  <figure
+                    class="card-banner img-holder has-before"
+                    style="--width: 700; --heigth: 1000"
+                  >
+                    <img
+                      src="images/Présentation.jpg"
+                      alt=""
+                      width="700"
+                      height="1000"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a
+                        href="https://github.com/yoann90/projet-mobile-pari_damis"
+                        target="_blank"
+                        class="card-title"
+                        >Paris d'Amis</a
+                      >
+                    </h3>
+                    <p class="card-tag">Application Mobile</p>
+                  </div>
+                  <a
+                    href="https://github.com/yoann90/projet-mobile-pari_damis"
+                    target="_blank"
+                    class="btn-icon"
+                    aria-label="see more"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="20"
+                      viewBox="0 0 43 20"
+                      fill="none"
+                    >
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path
+                        d="M33 1L41.9 10.2727L33 19"
+                        stroke="black"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="images/portfolio-shape.svg"
+              width="286"
+              height="232"
+              loading="lazy"
+              alt=""
+              class="shape"
+            />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-top section" id="contact">
+        <div class="container">
+          <p class="section-subtitle" data-reveal>Contact Us</p>
+
+          <h2 class="h2 section-title" data-reveal>
+            Opportunités d'emploi ? Envoyer le message.
+          </h2>
+
+          <a href="#" class="btn-icon" data-reveal>
+            <img
+              src="images/arrow-forward.svg"
+              width="43"
+              height="20"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+
+          <img
+            src="images/footer-shape.svg"
+            width="185"
+            height="134"
+            loading="lazy"
+            alt=""
+            class="shape"
+          />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">Li.</a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/yoann90"
+                target="_blank"
+                class="social-link"
+                >Github.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bg has-before">
+        <img
+          src="images/footer-bg.jpg"
+          width="1920"
+          height="1135"
+          loading="lazy"
+          alt=""
+          class="img-cover"
+        />
+      </div>
+    </footer>
+
+    <!-- back to top -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+      >0%</a
+    >
+
+    <!-- custom cursor -->
+
+    <div class="cursor" data-cursor></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
